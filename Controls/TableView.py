@@ -23,14 +23,14 @@ class TableView(ttk.Frame):
 
         self.widgetStyle: WidgetStyleConfig = WidgetStyleConfig()
 
-        super().__init__(master, style="TFrame")
+        super().__init__(master, style=self.styleContainer.tableVievStyle)
         self.tableData: List[str] = dataManager.LoadData()
 
         self.widgetStyle.CreateTableViewStyle()
         self.CreateTree()
         self.UpdateTable()
 
-    def UpdateTable(self): # Обновление отображения таблицы
+    def UpdateTable(self): #Обновление отображения таблицы.
         for item in self.tree.get_children():
             self.tree.delete(item)
         for row in self.tableData:

@@ -48,8 +48,10 @@ class ControlPanel(ttk.Frame): #Эта панель - обьект которы�
         self.radioFrame: RadioFrame = RadioFrame(master)
 #radio_initiazile_group
 
+        controlPanelPadding: int = 10
+
         super().__init__(master, style=styleContainer.controlPannelStyle)
-        self.configure(padding=10)
+        self.configure(padding=controlPanelPadding)
 
         radioFrame: ttk.Labelframe = self.radioFrame.CreateRadioFrame()
         
