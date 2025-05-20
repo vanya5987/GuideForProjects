@@ -4,6 +4,7 @@ Test - проект который мы рефакторим.
 
 Rules - Правила для написания кода.
 
+<pre style="font-family: monospace; white-space: pre; margin: 20px 0; background: #f5f5f5; padding: 15px; border-radius: 5px;">
 Архитектура приложений: 
 
 Папка приложения/
@@ -25,3 +26,4 @@ Rules - Правила для написания кода.
 │   └── database.py     	# Инициализация БД
 │
 └── app.py		        # Точка входа (запуск приложения)
+</pre>
